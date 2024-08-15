@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mrg">
+
+    <div class="yellow"  id="ON"></div>
+
+    <button onclick="toggleOff()" id="lightOff" class="btn">ON</button>
+</div>
+    <script>
+        var isOn = 1;
+        function toggleOff() {
+            isOn = !isOn
+            if(isOn){
+                document.getElementById("ON").style.backgroundColor = "white";
+                document.getElementById('lightOff').innerText = "ON";
+                
+            }else{
+                document.getElementById("ON").style.backgroundColor = "yellow";
+                document.getElementById('lightOff').innerText = "OFF";
+
+            }
+
+        }
+        // function toggleOff() {
+
+        //     document.getElementById("ON").style.backgroundColor = "yellow";
+        //     document.getElementById('lightOff').innerText = "OFF";
+        // }
+
+    </script>
+</body>
+</html>

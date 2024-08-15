@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="justify-content: center;">
+        <img src="/bulb offf.jpg"  id="bulboff" width="100px">
+        <img src="/bulb onn.jpg" alt="" id="on" width="80px" style="display: none;">
+
+        <button onclick="changeImg()" id="lightON">on</button>
+    </div>
+    
+
+    <script>
+function changeImg() {
+
+    if( document.getElementById("lightON").innerText == "off") {
+             document.getElementById("lightON").innerText = "on"
+    document.getElementById("bulboff").src = "bulb offf.jpg"
+    } else {
+        document.getElementById("lightON").innerText = "off"
+            document.getElementById("bulboff").src = "bulb onn.jpg"
+   
+    }
+     
+   
+}
+
+    </script>
+</body>
+</html>
